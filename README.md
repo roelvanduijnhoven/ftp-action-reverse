@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Upload ftp
+    - name: Download ftp
       uses: roelvanduijnhoven/ftp-action-reverse@latest
       with:
         host: ${{ secrets.FTP_SERVER }}
