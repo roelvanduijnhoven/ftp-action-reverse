@@ -1,6 +1,6 @@
 # ftp-action
 
-Automate copying your files via ftp using this GitHub action.
+Will mirror data from a remote FTP to a local folder.
 
 ## Example usage
 
@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Upload ftp
-      uses: sebastianpopp/ftp-action@releases/v2
+      uses: roelvanduijnhoven/ftp-action-reverse@latest
       with:
         host: ${{ secrets.FTP_SERVER }}
         user: ${{ secrets.FTP_USERNAME }}
