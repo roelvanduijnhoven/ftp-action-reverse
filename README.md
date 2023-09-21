@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: "dist"
         remoteDir: "www"
-        options: "--delete --asci"
+        options: "--delete --ascii"
 ```
 
 ## Input parameters
